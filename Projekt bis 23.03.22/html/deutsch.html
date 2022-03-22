@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Deutsch IQ - Test</title>
+    <style>
+        body  {
+            background-image: url(../img/debg.jpg);
+        }
+    </style>
+    <link rel="stylesheet" href="../css/deutsch.css">
+</head>
+<body><div style="text-align: center;" >
+    <h1>Deutsch IQ - Test</h1>
+    <p1>Beantworten Sie die 5 folgenden Fragen richtig um eine möglichst hohe Punktzahl zu erreichen</p1>
+<br><p2 style="line-height:350%">Frage 1: Es werden zwei Aussagen gegeben, die als wahr betrachtet werden: „Alle Vögel haben Flügel.“ Und: „Alle Flügel bestehen aus Federn.“ Welche der Antwortmöglichkeiten ist eine logische Schlussfolgerung aus den obigen Aussagen?</p2>
+    <div>
+        <p21><input type="checkbox" id="Falsch1" name="ersteFrageA1">
+            <label for="Falsch1">Alle Vögel können fliegen.</label></p21>
+    </div>
+    <div>
+        <p22> <input type="checkbox" id="Falsch2" name="ersteFrageA2">
+            <label for="Falsch2">Wenn Vögel fliegen können, brauchen sie ihre Flügel.</label></p22>
+    </div>
+    <div>
+        <p23> <input type="checkbox" id="Richtig1" name="ersteFrageA3">
+            <label for="Richtig1">Alle Vögel haben Federn.</label></p23>
+    </div>
+    <br> <p3 style="line-height:350%">Frage 2: Welcher der folgenden Begriffe hat dieselbe Bedeutung wie ambivalent:</p3>
+    <div>
+        <p31><input type="checkbox" id="Falsch3" name="zweiteFrageA1">
+            <label for="Falsch3">kontrovers</label></p31>
+    </div>
+    <div>
+        <p32><input type="checkbox" id="Richtig2" name="zweiteFrageA2">
+            <label for="Richtig2">zweideutig</label> </p32>
+    </div>
+    <br><p4 style="line-height:250%">Frage 3: Wie bilden Sie die korrekte Analogie? Baum verhält sich zu Wald wie Bach zu…</p4>
+    <div>
+        <p41><input type="checkbox" id="Falsch4" name="dritteFrageA1">
+            <label for="Falsch4">Ozean</label></p41>
+    </div>
+    <div>
+        <p42><input type="checkbox" id="Richtig3" name="dritteFrageA2">
+            <label for="Richtig3">Fluss</label></p42>
+    </div><br> <p5 style="line-height:250%">Frage 4: Welche Buchstabenfolge ergibt KEIN Wort?</p5>
+    <div>
+        <p51> <input type="checkbox" id="Falsch5" name="vierteFrageA1">
+            <label for="Falsch5">ÄNGKTER</label></p51>
+    </div>
+    <div>
+        <p52> <input type="checkbox" id="Richtig4" name="vierteFrageA2">
+            <label for="Richtig4">Richtig4</label> </p52>
+    </div><br> <p6 style="line-height:350%">Frage 5: Welches Tier können Sie in den Buchstaben finden?</p6>
+    <div>
+        <p61><input type="checkbox" id="Richtig5" name="fünfteFrageA1">
+            <label for="Richtig5">MSHARET</label></p61>
+    </div>
+    <div>
+        <p62><input type="checkbox" id="Falsch6" name="fünfteFrageA2">
+            <label for="Falsch6">MISEA</label></p62>
+    </div>
+</div>
+<br>
+<div class="wrapper">
+    <a onclick="ergebnis()"><span>Abgeben!</span>
+        <script type="text/javascript">                                  // Ab hier wird JavaScript geschrieben (Java-Script anfang)
+            function ergebnis()                                          // eine Funktion "Ergebnis" genannt wurde aufgestellt
+            {                                                            // In der Klammer kommt was die Funktion tun soll
+                let iq=40;                                               // Durch den Befehlt "let" wird der "Variable" (iq) der Startwert 40 zu geordnet
+                if(document.getElementById('Richtig1').checked)          /* Durch den Befehlt "if(document.getElementById('.......').checked)" wird das "dokument" (in dem Fall die richtige Antwort) mit der Id (......)
+                                                                          überprüft ob es angekreuzt wurde (checked). */
+                {	iq = iq + 20 ;                                       /* falls es der Fall, ist, dann wird die Rechnung iq = 40 + 20 durchgeführt und die "Variable" (iq) bekommt den Wert 60 zugeordnet und es wird damit weiter gerechnet,
+                                                                          falls das Kästchen mit der Id (.....) nicht angekreuzt wurde dann wird mit dem Start wert (iq = 40) weiter gerechnet, dasselbe wird mit den 4 darauf folgenden Befehlen ausgelöst */
+                }
+                if(document.getElementById('Richtig2').checked)          // die Fragen haben individuelle Bewertungseinheiten aufgrund des Schwierigkeit grads der jeweiligen Aufgabe
+                {	iq = iq + 10 ;
+                }
+                if(document.getElementById('Richtig3').checked)
+                {	iq = iq + 10 ;
+                }
+                if(document.getElementById('Richtig4').checked)
+                {	iq = iq + 30 ;
+                }
+                if(document.getElementById('Richtig5').checked)
+                {	iq = iq + 30;
+                }
+                alert("Dein IQ beträgt: " +iq);                      // diese Überprüfung erfolgt nach das Betätigen des Buttons "Abgeben" (vgl. line 66). Wenn alle 5 Antworten, überprüft wurden, dann steht der Iq-Wert fest und wird durch einen "Alarm" (alert) angezeigt.
+                                                                     // Script (Java-Script) ist zu Ende.
+            }
+        </script>
+
+</body>
+</html>

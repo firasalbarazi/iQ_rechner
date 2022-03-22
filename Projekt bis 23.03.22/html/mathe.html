@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathe IQ - Test</title>
+    <link rel="stylesheet" href="../css/mathe.css">
+    <style>
+        body  {
+            background-image: url(../img/mabg.png);
+        }
+    </style>
+</head>
+<body><div style="text-align: center;" >
+<h1>Mathe IQ - Test</h1>
+<p1>Beantworten Sie die 5 folgenden Fragen richtig um eine möglichst hohe Punktzahl zu erreichen!</p1>
+
+   <br> <p2 style="line-height:350%">Frage 1: Anna ist älter als Felix und Klaus ist älter als Julia. Anna und Julia sind gleich alt. Wer ist der Jüngste?</p2>
+    <div>
+    <p21><input type="checkbox" id="Falsch1" name="ersteFrageA1">
+        <label for="Falsch1">Klaus</label></p21>
+    </div>
+    <div>
+        <p22> <input type="checkbox" id="Falsch2" name="ersteFrageA2">
+        <label for="Falsch2">Anna</label></p22>
+    </div>
+    <div>
+        <p23> <input type="checkbox" id="Richtig1" name="ersteFrageA3">
+        <label for="Richtig1">Felix</label></p23>
+    </div>
+    <br> <p3 style="line-height:350%">Frage 2: Sie gehen in den Supermarkt und kaufen genau zwei Produkte. Einen Joghurt und einen Apfel. Zusammen kosten beide 1,10 Euro. Der Apfel kostet 1 Euro mehr als der Joghurt. Wie viel kostet der Joghurt?</p3>
+    <div>
+        <p31><input type="checkbox" id="Falsch3" name="zweiteFrageA1">
+        <label for="Falsch3">Der Apfel kostet 1 Euro der Joghurt 10 Cent</label></p31>
+    </div>
+    <div>
+        <p32><input type="checkbox" id="Richtig2" name="zweiteFrageA2">
+        <label for="Richtig2">Der Apfel kostet 1,05 Euro und der Joghurt 5 Cent </label> </p32>
+    </div>
+    <br><p4 style="line-height:250%">Frage 3: Auf einem nicht genutzten Feld wächst Unkraut in großen Mengen. Jeden Tag verdoppelt sich das Unkraut und innerhalb von 26 Tagen ist das gesamte Feld von Unkraut bedeckt. Wie lange dauert es, bis das Unkraut die Hälfte des Feldes bedeckt hat?</p4>
+    <div>
+        <p41><input type="checkbox" id="Falsch4" name="dritteFrageA1">
+            <label for="Falsch4">13 Tage</label></p41>
+    </div>
+    <div>
+        <p42><input type="checkbox" id="Richtig3" name="dritteFrageA2">
+            <label for="Richtig3">25 Tage</label></p42>
+    </div><br> <p5 style="line-height:250%">Frage 4: Sie treffen ein Mädchen und sollen erraten, wie alt dieses ist. Als Tipp erhalten Sie ein Rätsel, dessen Lösung Sie zur Antwort führt: In 15 Jahren werde ich viermal so alt sein wie vor 3 Jahren. Wie alt ist das Mädchen?</p5>
+    <div>
+        <p51> <input type="checkbox" id="Richtig4" name="vierteFrageA1">
+            <label for="Richtig4">9 Jahre</label></p51>
+    </div>
+    <div>
+        <p52> <input type="checkbox" id="Falsch5" name="vierteFrageA2">
+            <label for="Falsch5">24 Jahre</label> </p52>
+    </div><br> <p6 style="line-height:350%">Frage 5: Sehen Sie sich die folgende Zahlenreihe genau an. Ihre Aufgabe ist es, die fehlende Zahl zu ergänzen, mit der die Reihe fortgeführt wird. (5 – 25 – 7 – 49 – 31 – ?)</p6>
+    <div>
+        <p61><input type="checkbox" id="Falsch6" name="fünfteFrageA1">
+        <label for="Falsch6">296</label></p61>
+    </div>
+    <div>
+        <p62><input type="checkbox" id="Richtig5" name="fünfteFrageA2">
+            <label for="Richtig5">961</label></p62>
+    </div>
+</div>
+<br>
+<div class="wrapper">
+    <a onclick="ergebnis()"><span>Abgeben!</span>
+        <script type="text/javascript">
+            function ergebnis()
+            {
+                let iq=40;
+                if(document.getElementById('Richtig1').checked)
+                {	iq = iq + 20 ;
+                }
+                if(document.getElementById('Richtig2').checked)
+                {	iq = iq + 25 ;
+                }
+                if(document.getElementById('Richtig3').checked)
+                {	iq = iq + 10 ;
+                }
+                if(document.getElementById('Richtig4').checked)
+                {	iq = iq + 10 ;
+                }
+                if(document.getElementById('Richtig5').checked)
+                {	iq = iq + 35;
+                }
+                alert("Dein IQ beträgt: "+iq);
+
+            }
+        </script>
+
+
+</body>
+</html>

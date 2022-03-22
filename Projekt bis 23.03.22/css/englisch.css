@@ -1,0 +1,101 @@
+h1 { color: white;
+    font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}  p1 { color: rgb(118, 225, 14);
+       font-family: fantasy;
+       text-shadow: black 0.1em 0.1em 0.2em;
+   }
+p2 { color: #f33a10;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p3 { color: #f33a10;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p4 { color: #f33a10;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p5 { color: #f33a10;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p6 { color: #f33a10;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p21 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p22 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p23 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p31 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p32 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p41 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p42 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p51 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p52 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p61 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+p62 { color: #DDDDDD;font-family: fantasy;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.wrapper{
+    position: relative ;
+    left: 45%;
+    bottom: 10%;
+}
+
+
+a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #76e10e;
+    border: 2px solid #76e10e;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+a span{
+    position: relative;
+    z-index: 2;
+}
+
+a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #76e10e;
+    transition: all .35s;
+}
+
+a:hover{
+    color: #f5ebeb;
+}
+
+a:hover:after{
+    width: 100%;
+}

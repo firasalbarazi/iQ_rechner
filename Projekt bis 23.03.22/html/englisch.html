@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Englisch IQ - Test</title>
+    <style>
+        body  {
+            background-image: url(../img/enbg.jpg);
+        }
+    </style>
+    <link rel="stylesheet" href="../css/englisch.css">
+</head>
+<body><div style="text-align: center;" >
+    <h1>English IQ - Test</h1>
+    <p1>Answer the 5 following questions correctly to achieve the highest possible score</p1>
+    <br> <p2 style="line-height:350%">Question 1: I ______ 25 years old</p2>
+    <div>
+        <p21><input type="checkbox" id="Falsch1" name="ersteFrageA1">
+            <label for="Falsch1">do</label></p21>
+    </div>
+    <div>
+        <p22> <input type="checkbox" id="Falsch2" name="ersteFrageA2">
+            <label for="Falsch2">have</label></p22>
+    </div>
+    <div>
+        <p23> <input type="checkbox" id="Richtig1" name="ersteFrageA3">
+            <label for="Richtig1">am</label></p23>
+    </div>
+    <br> <p3 style="line-height:350%">Question 2: She _______ to school every day</p3>
+    <div>
+        <p31><input type="checkbox" id="Falsch3" name="zweiteFrageA1">
+            <label for="Falsch3">go</label></p31>
+    </div>
+    <div>
+        <p32><input type="checkbox" id="Richtig2" name="zweiteFrageA2">
+            <label for="Richtig2">goes</label> </p32>
+    </div>
+    <br><p4 style="line-height:250%">Question 3: _______ is the train station? Is it in this area?</p4>
+    <div>
+        <p41><input type="checkbox" id="Falsch4" name="dritteFrageA1">
+            <label for="Falsch4">What</label></p41>
+    </div>
+    <div>
+        <p42><input type="checkbox" id="Richtig3" name="dritteFrageA2">
+            <label for="Richtig3">Where</label></p42>
+    </div><br> <p5 style="line-height:250%">Question 4:That`s my book. The book is _______</p5>
+    <div>
+        <p51> <input type="checkbox" id="Falsch5" name="vierteFrageA1">
+            <label for="Falsch5">my</label></p51>
+    </div>
+    <div>
+        <p52> <input type="checkbox" id="Richtig4" name="vierteFrageA2">
+            <label for="Richtig4">mine</label> </p52>
+    </div><br> <p6 style="line-height:350%">Question 5: I don`t like tea! I ____ drink coffee.</p6>
+    <div>
+        <p61><input type="checkbox" id="Richtig5" name="fünfteFrageA1">
+            <label for="Richtig5">only</label></p61>
+    </div>
+    <div>
+        <p62><input type="checkbox" id="Falsch6" name="fünfteFrageA2">
+            <label for="Falsch6">also</label></p62>
+    </div>
+</div>
+<br>
+<div class="wrapper">
+    <a onclick="ergebnis()"><span>Submit!</span>
+        <script type="text/javascript">
+            function ergebnis()
+            {
+                let iq=40;
+                if(document.getElementById('Richtig1').checked)
+                {	iq = iq + 30 ;
+                }
+                if(document.getElementById('Richtig2').checked)
+                {	iq = iq + 20 ;
+                }
+                if(document.getElementById('Richtig3').checked)
+                {	iq = iq + 15 ;
+                }
+                if(document.getElementById('Richtig4').checked)
+                {	iq = iq + 20 ;
+                }
+                if(document.getElementById('Richtig5').checked)
+                {	iq = iq + 15;
+                }
+                alert("Dein IQ beträgt: "+iq);
+
+            }
+        </script>
+
+
+
+</body>
+</html>
